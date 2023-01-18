@@ -1,0 +1,1749 @@
+2023-01-18 18:01:03 [scrapy.utils.log] INFO: Scrapy 2.7.1 started (bot: bearspace_project)
+2023-01-18 18:01:03 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.7.0, w3lib 2.1.1, Twisted 22.10.0, Python 3.10.8 (main, Oct 13 2022, 10:17:43) [Clang 14.0.0 (clang-1400.0.29.102)], pyOpenSSL 23.0.0 (OpenSSL 3.0.7 1 Nov 2022), cryptography 39.0.0, Platform macOS-12.4-x86_64-i386-64bit
+2023-01-18 18:01:03 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'bearspace_project',
+ 'DOWNLOAD_DELAY': 0.5,
+ 'NEWSPIDER_MODULE': 'bearspace_project.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['bearspace_project.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-01-18 18:01:03 [asyncio] DEBUG: Using selector: KqueueSelector
+2023-01-18 18:01:03 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-01-18 18:01:03 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.unix_events._UnixSelectorEventLoop
+2023-01-18 18:01:03 [scrapy.extensions.telnet] INFO: Telnet Password: de81f0747d0b8f36
+2023-01-18 18:01:03 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2023-01-18 18:01:03 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-01-18 18:01:03 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-01-18 18:01:04 [scrapy.middleware] INFO: Enabled item pipelines:
+['bearspace_project.pipelines.ArtworksDataframe']
+2023-01-18 18:01:04 [scrapy.core.engine] INFO: Spider opened
+2023-01-18 18:01:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-01-18 18:01:04 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-01-18 18:01:05 [filelock] DEBUG: Attempting to acquire lock 4658255408 on /Users/muhammadfakhar/.cache/python-tldextract/3.10.8.final__env__562ff3__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-18 18:01:05 [filelock] DEBUG: Lock 4658255408 acquired on /Users/muhammadfakhar/.cache/python-tldextract/3.10.8.final__env__562ff3__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-18 18:01:05 [filelock] DEBUG: Attempting to release lock 4658255408 on /Users/muhammadfakhar/.cache/python-tldextract/3.10.8.final__env__562ff3__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-18 18:01:05 [filelock] DEBUG: Lock 4658255408 released on /Users/muhammadfakhar/.cache/python-tldextract/3.10.8.final__env__562ff3__tldextract-3.4.0/publicsuffix.org-tlds/de84b5ca2167d4c83e38fb162f2e8738.tldextract.json.lock
+2023-01-18 18:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/purchase> (referer: None)
+2023-01-18 18:01:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=2> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/p10-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/p10-by-olly-fathers>
+{'height': '30',
+ 'media': 'Acrylic paint on sprayed board £24 a month on the Own Art Scheme, '
+          'do',
+ 'name': 'P10 by Olly Fathers',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/p10-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/p8-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/p8-by-olly-fathers>
+{'height': '30',
+ 'media': 'Acrylic paint on sprayed board £24 a month on the Own Art Scheme, '
+          'do',
+ 'name': 'P8 by Olly Fathers',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/p8-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/p4-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/p4-by-olly-fathers>
+{'height': '30',
+ 'media': 'Acrylic paint on sprayed board £24 a month on the Own Art Scheme, '
+          'do',
+ 'name': 'P4 by Olly Fathers',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/p4-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/p1-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/p1-by-olly-fathers>
+{'height': '30',
+ 'media': 'Acrylic paint on sprayed board £24 a month on the Own Art Scheme, '
+          'do',
+ 'name': 'P1 by Olly Fathers',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/p1-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/c13-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/c13-by-olly-fathers>
+{'height': '30',
+ 'media': 'Acrylic paint on sprayed board £24 a month on the Own Art Scheme, '
+          'do',
+ 'name': 'C13 by Olly Fathers',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/c13-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/c6-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/c6-by-olly-fathers>
+{'height': '30',
+ 'media': 'Acrylic paint on sprayed board £24 a month on the Own Art Scheme, '
+          'do',
+ 'name': 'C6 by Olly Fathers',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/c6-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/collage-1-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/collage-1-by-olly-fathers>
+{'height': '21',
+ 'media': 'Spraypaint, vinyl, card, digital print collage',
+ 'name': 'Collage 1 by Olly Fathers',
+ 'price': '175.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/collage-1-by-olly-fathers',
+ 'width': '29.7'}
+2023-01-18 18:01:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/collage-2-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/collage-2-by-olly-fathers>
+{'height': '21',
+ 'media': 'Spraypaint, vinyl, card, digital print collage',
+ 'name': 'Collage 2 by Olly Fathers',
+ 'price': '175.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/collage-2-by-olly-fathers',
+ 'width': '29.7'}
+2023-01-18 18:01:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/collage-3-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/collage-3-by-olly-fathers>
+{'height': '21',
+ 'media': 'Spraypaint, vinyl, card, digital print collage',
+ 'name': 'Collage 3 by Olly Fathers',
+ 'price': '175.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/collage-3-by-olly-fathers',
+ 'width': '29.7'}
+2023-01-18 18:01:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/constructed-veneer-vii-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/constructed-veneer-vii-by-olly-fathers>
+{'height': '25',
+ 'media': 'Various wood veneers, various woods, board £94 a month on the Own '
+          'Art scheme,',
+ 'name': 'Constructed Veneer VII by Olly Fathers',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/constructed-veneer-vii-by-olly-fathers',
+ 'width': '34'}
+2023-01-18 18:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/constructed-veneer-5-by-olly-fathers-1> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/constructed-veneer-5-by-olly-fathers-1>
+{'height': '24',
+ 'media': 'Various wood veneers, various woods, board £94 a month on the Own '
+          'Art scheme,',
+ 'name': 'Constructed Veneer VI by Olly Fathers',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/constructed-veneer-5-by-olly-fathers-1',
+ 'width': '26'}
+2023-01-18 18:01:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/constructed-veneer-5-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/constructed-veneer-5-by-olly-fathers>
+{'height': '33',
+ 'media': 'Various wood veneers, various woods, board £94 a month on the Own '
+          'Art scheme,',
+ 'name': 'Constructed Veneer V by Olly Fathers',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/constructed-veneer-5-by-olly-fathers',
+ 'width': '30'}
+2023-01-18 18:01:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/constructed-veneer-4-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/constructed-veneer-4-by-olly-fathers>
+{'height': '32',
+ 'media': 'Various wood veneers, various woods, board £110 a month on the Own '
+          'Art scheme,',
+ 'name': 'Constructed Veneer IV by Olly Fathers',
+ 'price': '1,100.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/constructed-veneer-4-by-olly-fathers',
+ 'width': '38'}
+2023-01-18 18:01:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/tommy-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/tommy-by-olly-fathers>
+{'height': '70',
+ 'media': 'Spraypaint, board, card, digital print collage Original art frame '
+          'included in price £194 a month on Own Art,',
+ 'name': 'Tommy by Olly Fathers',
+ 'price': '1,940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/tommy-by-olly-fathers',
+ 'width': '100'}
+2023-01-18 18:01:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/crossroads-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/crossroads-by-olly-fathers>
+{'height': '120',
+ 'media': 'Sprayed board Acrylic paint on sprayed board Original art £400 a '
+          'month on Own Art plus,',
+ 'name': 'Crossroads by Olly Fathers',
+ 'price': '4,000.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/crossroads-by-olly-fathers',
+ 'width': '120'}
+2023-01-18 18:01:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/off-road-by-lucy-baker> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/off-road-by-lucy-baker>
+{'height': '40',
+ 'media': 'Oil paint, spray paint & gold leaf on board',
+ 'name': 'OFF ROAD by Lucy Baker',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/off-road-by-lucy-baker',
+ 'width': '30'}
+2023-01-18 18:01:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/portal-7-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/portal-7-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print under acrylic with subframe',
+ 'name': 'Portal 7 by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/portal-7-by-jane-ward',
+ 'width': '60'}
+2023-01-18 18:01:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/portal-8-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/portal-8-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print under acrylic with subframe',
+ 'name': 'Portal 8 by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/portal-8-by-jane-ward',
+ 'width': '60'}
+2023-01-18 18:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/portal-9-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/portal-9-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print under acrylic with subframe',
+ 'name': 'Portal 9 by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/portal-9-by-jane-ward',
+ 'width': '60'}
+2023-01-18 18:01:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/as-the-tide-turned-by-dominic-bradnum> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/as-the-tide-turned-by-dominic-bradnum>
+{'height': '80',
+ 'media': 'Oil with charcoal, watercolour and sand on canvas £140 a month on '
+          'the Own Art Scheme',
+ 'name': 'As The Tide Turned by Dominic Bradnum',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/as-the-tide-turned-by-dominic-bradnum',
+ 'width': '100'}
+2023-01-18 18:01:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/you-took-my-breath-away-by-dominic-bradnum> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:19 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/you-took-my-breath-away-by-dominic-bradnum
+2023-01-18 18:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/balancing-acts-i-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/balancing-acts-i-by-elise-wootten>
+{'height': '50.8',
+ 'media': 'Inkjet Print (Hahnemuhle Ultra-Smooth)',
+ 'name': 'Balancing Acts I by Elise Wootten',
+ 'price': '400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/balancing-acts-i-by-elise-wootten',
+ 'width': '40.7'}
+2023-01-18 18:01:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/balancing-acts-ii-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/balancing-acts-ii-by-elise-wootten>
+{'height': '50.8',
+ 'media': 'Inkjet Print (Hahnemuhle Ultra-Smooth)',
+ 'name': 'Balancing Acts II by Elise Wootten',
+ 'price': '400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/balancing-acts-ii-by-elise-wootten',
+ 'width': '40.7'}
+2023-01-18 18:01:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/balancing-acts-iii-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/balancing-acts-iii-by-elise-wootten>
+{'height': '50.8',
+ 'media': 'Inkjet Print (Hahnemuhle Ultra-Smooth)',
+ 'name': 'Balancing Acts III by Elise Wootten',
+ 'price': '400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/balancing-acts-iii-by-elise-wootten',
+ 'width': '40.7'}
+2023-01-18 18:01:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/balancing-acts-iv-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/balancing-acts-iv-by-elise-wootten>
+{'height': '50.8',
+ 'media': 'Inkjet Print (Hahnemuhle Ultra-Smooth)',
+ 'name': 'Balancing Acts IV by Elise Wootten',
+ 'price': '400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/balancing-acts-iv-by-elise-wootten',
+ 'width': '40.7'}
+2023-01-18 18:01:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/balancing-acts-v-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/balancing-acts-v-by-elise-wootten>
+{'height': '50.8',
+ 'media': 'Inkjet Print (Hahnemuhle Ultra-Smooth)',
+ 'name': 'Balancing Acts V by Elise Wootten',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/balancing-acts-v-by-elise-wootten',
+ 'width': '40.7'}
+2023-01-18 18:01:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/somewhat-confusing-i-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/somewhat-confusing-i-by-elise-wootten>
+{'height': '88',
+ 'media': 'Aluminium, Inkjet Vinyl Print Edition of 1 (original artwork)',
+ 'name': 'Somewhat Confusing I by Elise Wootten',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/somewhat-confusing-i-by-elise-wootten',
+ 'width': '74'}
+2023-01-18 18:01:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/somewhat-confusing-ii-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/somewhat-confusing-ii-by-elise-wootten>
+{'height': '89',
+ 'media': 'Aluminium, Inkjet Vinyl Print Edition of 1 (original artwork)',
+ 'name': 'Somewhat Confusing II by Elise Wootten',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/somewhat-confusing-ii-by-elise-wootten',
+ 'width': '75'}
+2023-01-18 18:01:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/somewhat-confusing-iii-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/somewhat-confusing-iii-by-elise-wootten>
+{'height': '88',
+ 'media': 'Aluminium, Inkjet Vinyl Print Edition of 1 (original artwork)',
+ 'name': 'Somewhat Confusing III by Elise Wootten',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/somewhat-confusing-iii-by-elise-wootten',
+ 'width': '75'}
+2023-01-18 18:01:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/all-recognisable-entities-by-elise-wootten> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/all-recognisable-entities-by-elise-wootten>
+{'height': '50.2',
+ 'media': 'Beech, Mdf, Acrylic paint, Vinyl Edition of 1 (original artwork)',
+ 'name': 'All Recognisable Entities by Elise Wootten',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/all-recognisable-entities-by-elise-wootten',
+ 'width': '40.9'}
+2023-01-18 18:01:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/to-the-zenith-s-height-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/to-the-zenith-s-height-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival digital print on canvas with dissolved canvas',
+ 'name': "To The Zenith's Height by Jane Ward",
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/to-the-zenith-s-height-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:01:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-ephemeral-isles-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-ephemeral-isles-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival digital print on canvas with dissolved canvas',
+ 'name': 'The Ephemeral Isles by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-ephemeral-isles-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/morning-came-by-dominic-bradnum> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:26 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/morning-came-by-dominic-bradnum
+2023-01-18 18:01:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/kin-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:27 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/kin-by-vic-wright
+2023-01-18 18:01:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/another-sunset-by-lucy-baker> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/another-sunset-by-lucy-baker>
+{'height': '34',
+ 'media': 'Oil paint, spray paint & gold leaf on board',
+ 'name': 'Another Sunset by Lucy Baker',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/another-sunset-by-lucy-baker',
+ 'width': '42'}
+2023-01-18 18:01:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/hurricane-by-lucy-baker> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:28 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/hurricane-by-lucy-baker
+2023-01-18 18:01:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=3> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:29 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.bearspace.co.uk//purchase?page=2> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2023-01-18 18:01:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase> (referer: https://www.bearspace.co.uk//purchase?page=2)
+2023-01-18 18:01:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/amazons-by-lucy-baker> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/amazons-by-lucy-baker>
+{'height': '130',
+ 'media': 'Oil paint, spray paint & gold leaf on board',
+ 'name': 'Amazons by Lucy Baker',
+ 'price': '1,600.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/amazons-by-lucy-baker',
+ 'width': '110'}
+2023-01-18 18:01:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-hurricane-by-lucy-baker> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-hurricane-by-lucy-baker>
+{'height': '130',
+ 'media': 'Oil paint, spray paint & gold leaf on board',
+ 'name': 'The Hurricane by Lucy Baker',
+ 'price': '1,600.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-hurricane-by-lucy-baker',
+ 'width': '110'}
+2023-01-18 18:01:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/overland-i-by-jane-ward> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/overland-i-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival Digital print on stretched canvas, finished with gold leaf',
+ 'name': 'Overland I by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/overland-i-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:01:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/candy-flop-by-olly-fathers> (referer: https://www.bearspace.co.uk/purchase)
+2023-01-18 18:01:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/candy-flop-by-olly-fathers>
+{'height': '53',
+ 'media': 'Sprayed board Wall based sculpture Original art £340 a month on Own '
+          'Art plus,',
+ 'name': 'Candy Flop by Olly Fathers',
+ 'price': '3,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/candy-flop-by-olly-fathers',
+ 'width': '127'}
+2023-01-18 18:01:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=4> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/portal-6-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/portal-6-by-jane-ward>
+{'height': '30',
+ 'media': 'Digital print under acrylic with subframe',
+ 'name': 'Portal 6 by Jane Ward',
+ 'price': '320.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/portal-6-by-jane-ward',
+ 'width': '30'}
+2023-01-18 18:01:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/portal-5-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/portal-5-by-jane-ward>
+{'height': '30',
+ 'media': 'Digital print under acrylic with subframe',
+ 'name': 'Portal 5 by Jane Ward',
+ 'price': '320.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/portal-5-by-jane-ward',
+ 'width': '30'}
+2023-01-18 18:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragstudy-5-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragstudy-5-by-jim-cheatle>
+{'height': '23',
+ 'media': 'Resin, pigments, inkjet prints, MDF',
+ 'name': 'Fragstudy 7 by Jim Cheatle',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragstudy-5-by-jim-cheatle',
+ 'width': '30.5'}
+2023-01-18 18:01:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragstudy-4-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragstudy-4-by-jim-cheatle>
+{'height': '23',
+ 'media': 'Resin, pigments, inkjet prints, MDF',
+ 'name': 'Fragstudy 4 by Jim Cheatle',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragstudy-4-by-jim-cheatle',
+ 'width': '30.5'}
+2023-01-18 18:01:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragstudy-3-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragstudy-3-by-jim-cheatle>
+{'height': '23',
+ 'media': 'Resin, pigments, inkjet prints, MDF',
+ 'name': 'Fragstudy 3 by Jim Cheatle',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragstudy-3-by-jim-cheatle',
+ 'width': '30.5'}
+2023-01-18 18:01:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragstudy-2-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragstudy-2-by-jim-cheatle>
+{'height': '23',
+ 'media': 'Resin, pigments, inkjet prints, MDF',
+ 'name': 'Fragstudy 2 by Jim Cheatle',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragstudy-2-by-jim-cheatle',
+ 'width': '30.5'}
+2023-01-18 18:01:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragstudy-1-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragstudy-1-by-jim-cheatle>
+{'height': '23',
+ 'media': 'Resin, pigments, inkjet prints, MDF',
+ 'name': 'Fragstudy 1 by Jim Cheatle',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragstudy-1-by-jim-cheatle',
+ 'width': '30.5'}
+2023-01-18 18:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragmentation-no-10-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragmentation-no-10-by-jim-cheatle>
+{'height': '54.5',
+ 'media': 'Resin, pigments, paper, indian ink, inkjet prints, MDF',
+ 'name': 'FRAGMENTATION No.10 by Jim Cheatle',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragmentation-no-10-by-jim-cheatle',
+ 'width': '70'}
+2023-01-18 18:01:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragmentation-no-17-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragmentation-no-17-by-jim-cheatle>
+{'height': '54.5',
+ 'media': 'Resin, pigments, canvas, paper, inkjet prints, MDF',
+ 'name': 'FRAGMENTATION No.17 by Jim Cheatle',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragmentation-no-17-by-jim-cheatle',
+ 'width': '70'}
+2023-01-18 18:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragmentation-no-33-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragmentation-no-33-by-jim-cheatle>
+{'height': '54.5',
+ 'media': 'Resin, pigments, canvas, paper, inkjet prints, MDF',
+ 'name': 'FRAGMENTATION No.33 by Jim Cheatle',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragmentation-no-33-by-jim-cheatle',
+ 'width': '70'}
+2023-01-18 18:01:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/from-steep-to-steep-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/from-steep-to-steep-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print on Aluminium Edition of 5 - please note colours are '
+          'more muted when printed on aluminium, this surface reflects the '
+          'light and so adds another layer to the way you view the piece, '
+          "coming 'alive' in certain lightings.",
+ 'name': 'From Steep to Steep by Jane Ward',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/from-steep-to-steep-by-jane-ward',
+ 'width': '45'}
+2023-01-18 18:01:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/castle-2-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/castle-2-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print on Aluminium Edition of 5 - please note colours are '
+          'more muted when printed on aluminium, this surface reflects the '
+          'light and so adds another layer to the way you view the piece, '
+          "coming 'alive' in certain lightings.",
+ 'name': 'Castle 2 by Jane Ward',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/castle-2-by-jane-ward',
+ 'width': '45'}
+2023-01-18 18:01:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/unfathomable-deeps-by-jane-ward-1> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/unfathomable-deeps-by-jane-ward-1>
+{'height': '30',
+ 'media': 'Digital print on Aluminium Edition of 5 - please note colours are '
+          'more muted when printed on aluminium, this surface reflects the '
+          'light and so adds another layer to the way you view the piece, '
+          "coming 'alive' in certain lightings.",
+ 'name': 'Unfathomable Deeps by Jane Ward',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/unfathomable-deeps-by-jane-ward-1',
+ 'width': '24'}
+2023-01-18 18:01:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/from-frozen-floods-by-jane-ward-1> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/from-frozen-floods-by-jane-ward-1>
+{'height': '30',
+ 'media': 'Digital print on Aluminium Edition of 5 - please note colours are '
+          'more muted when printed on aluminium, this surface reflects the '
+          'light and so adds another layer to the way you view the piece, '
+          "coming 'alive' in certain lightings.",
+ 'name': 'From Frozen Floods by Jane Ward',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/from-frozen-floods-by-jane-ward-1',
+ 'width': '24'}
+2023-01-18 18:01:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-ephemeral-isles-5a-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-ephemeral-isles-5a-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print on canvas with dissolved ink',
+ 'name': 'The Ephemeral Isles 5 by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-ephemeral-isles-5a-by-jane-ward',
+ 'width': '45'}
+2023-01-18 18:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/copy-of-meld-5> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:42 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/copy-of-meld-5
+2023-01-18 18:01:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/facet-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:42 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/facet-by-vic-wright
+2023-01-18 18:01:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/conversation-2-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:43 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/conversation-2-by-vic-wright
+2023-01-18 18:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/conversation-3-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:44 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/conversation-3-by-vic-wright
+2023-01-18 18:01:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/green-sanctuary-by-dionne-cole> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/green-sanctuary-by-dionne-cole>
+{'height': '85.5',
+ 'media': 'Green Sanctuary artwork draws inspiration from the vibrant colours '
+          'of the sea, which makes this piece come to life. It gives a sense '
+          'of vibrancy ,with hints of bold colours. The bursts of greens '
+          'transcends into different forms and folds.',
+ 'name': 'Green Sanctuary by Dionne Cole',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/green-sanctuary-by-dionne-cole',
+ 'width': '58'}
+2023-01-18 18:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/facet-2-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:45 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/facet-2-by-vic-wright
+2023-01-18 18:01:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/facet-3-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/facet-3-by-vic-wright>
+{'height': '7',
+ 'media': '',
+ 'name': 'Facet 3 by Vic Wright',
+ 'price': '140.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/facet-3-by-vic-wright',
+ 'width': '7'}
+2023-01-18 18:01:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/facet-4-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/facet-4-by-vic-wright>
+{'height': '6',
+ 'media': '',
+ 'name': 'Facet 4 by Vic Wright',
+ 'price': '140.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/facet-4-by-vic-wright',
+ 'width': '7.5'}
+2023-01-18 18:01:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/facet-5-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/facet-5-by-vic-wright>
+{'height': '6.5',
+ 'media': '',
+ 'name': 'Facet 5 by Vic Wright',
+ 'price': '140.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/facet-5-by-vic-wright',
+ 'width': '8'}
+2023-01-18 18:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/shades-of-coral-ii-by-dionne-cole> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/shades-of-coral-ii-by-dionne-cole>
+{'height': '40.7',
+ 'media': '',
+ 'name': 'Shades of Coral II by Dionne Cole',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/shades-of-coral-ii-by-dionne-cole',
+ 'width': '30.5'}
+2023-01-18 18:01:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/flight-by-dionne-cole> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/flight-by-dionne-cole>
+{'height': '155',
+ 'media': 'Flight artwork is about a sense of movement, as though the pieces '
+          'are in motion. A formation of patterns within geometric and organic '
+          'shapes with a real sense of wonder. ‘Flight’ is part of a series of '
+          '4 (I-IV) Each piece is configured uniquely, based on the same paper '
+          'elements to represent a different pattern of flight & movement',
+ 'name': 'Flight by Dionne Cole',
+ 'price': '2,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/flight-by-dionne-cole',
+ 'width': '92'}
+2023-01-18 18:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/i-see-beauty-in-everything-by-dominic-badnum> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:49 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/i-see-beauty-in-everything-by-dominic-badnum
+2023-01-18 18:01:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-tide-seems-to-whisper-your-name-by-dominic-badnum> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:49 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/the-tide-seems-to-whisper-your-name-by-dominic-badnum
+2023-01-18 18:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/take-my-hand-by-dominic-badnum> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:50 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/take-my-hand-by-dominic-badnum
+2023-01-18 18:01:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/you-took-my-breath-away-by-dominic-badnum> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:50 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/you-took-my-breath-away-by-dominic-badnum
+2023-01-18 18:01:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/disperse-by-dionne-cole> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/disperse-by-dionne-cole>
+{'height': '101.6',
+ 'media': 'Disperse artwork gives the feeling of pieces being spread over '
+          'different areas, with a continual growth. The overlapping of paper '
+          'pieces show a real sense of depth.',
+ 'name': 'Disperse by Dionne Cole',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/disperse-by-dionne-cole',
+ 'width': '76'}
+2023-01-18 18:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/purple-motion-by-dionne-cole> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:52 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/purple-motion-by-dionne-cole
+2023-01-18 18:01:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/meld-4-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:52 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/meld-4-by-vic-wright
+2023-01-18 18:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/meld-5-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:53 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/meld-5-by-vic-wright
+2023-01-18 18:01:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-ephemeral-isles-1-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-ephemeral-isles-1-by-jane-ward>
+{'height': '120',
+ 'media': 'Digital print on Aluminium Edition of 5 - please note colours are '
+          'more muted when printed on aluminium',
+ 'name': 'The Ephemeral Isles 1 by Jane Ward',
+ 'price': '1,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-ephemeral-isles-1-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:01:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/those-hidden-ravines-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/those-hidden-ravines-by-jane-ward>
+{'height': '60',
+ 'media': 'Digital print on Aluminium Edition of 5 - please note colours are '
+          'more muted when printed on aluminium, this surface reflects the '
+          'light and so adds another layer to the way you view the piece, '
+          "coming 'alive' in certain lightings.",
+ 'name': 'Those Hidden Ravines by Jane Ward',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/those-hidden-ravines-by-jane-ward',
+ 'width': '45'}
+2023-01-18 18:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=5> (referer: https://www.bearspace.co.uk//purchase?page=4)
+2023-01-18 18:01:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/portal-1-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/portal-1-by-jane-ward>
+{'height': '30',
+ 'media': 'Digital print under acrylic with subframe',
+ 'name': 'Portal 1 by Jane Ward',
+ 'price': '320.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/portal-1-by-jane-ward',
+ 'width': '30'}
+2023-01-18 18:01:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragmentation-no-46-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragmentation-no-46-by-jim-cheatle>
+{'height': '54.5',
+ 'media': 'Resin, pigments, indian ink, watercolour paper, inkjet prints, MDF',
+ 'name': 'FRAGMENTATION No.46 by Jim Cheatle',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragmentation-no-46-by-jim-cheatle',
+ 'width': '70'}
+2023-01-18 18:01:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragmentation-no-44-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragmentation-no-44-by-jim-cheatle>
+{'height': '54.5',
+ 'media': 'Resin, pigments, inkjet prints, canvas, MDF',
+ 'name': 'FRAGMENTATION No.44 by Jim Cheatle',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragmentation-no-44-by-jim-cheatle',
+ 'width': '70'}
+2023-01-18 18:01:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/fragmentation-no-45-by-jim-cheatle> (referer: https://www.bearspace.co.uk//purchase?page=3)
+2023-01-18 18:01:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/fragmentation-no-45-by-jim-cheatle>
+{'height': '54.5',
+ 'media': 'Resin, pigments, inkjet prints, acrylic, paper, MDF',
+ 'name': 'FRAGMENTATION No.45 by Jim Cheatle',
+ 'price': '1,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/fragmentation-no-45-by-jim-cheatle',
+ 'width': '70'}
+2023-01-18 18:01:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=6> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:01:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/ore-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:01:58 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/ore-by-vic-wright
+2023-01-18 18:01:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/meld-2-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:01:59 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/meld-2-by-vic-wright
+2023-01-18 18:02:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/conversation-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:00 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/conversation-by-vic-wright
+2023-01-18 18:02:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/meld-1-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:00 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/meld-1-by-vic-wright
+2023-01-18 18:02:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/standing-white-black-gold-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/standing-white-black-gold-by-vic-wright>
+{'height': '6',
+ 'media': '',
+ 'name': 'Standing White , black & gold by Vic Wright',
+ 'price': '280.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/standing-white-black-gold-by-vic-wright',
+ 'width': '12'}
+2023-01-18 18:02:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/standing-grey-double-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/standing-grey-double-by-vic-wright>
+{'height': '6.5',
+ 'media': '',
+ 'name': 'Standing Grey double by Vic Wright',
+ 'price': '180.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/standing-grey-double-by-vic-wright',
+ 'width': '12'}
+2023-01-18 18:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/standing-triple-grey-and-black-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:02 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/standing-triple-grey-and-black-by-vic-wright
+2023-01-18 18:02:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/standing-white-and-grey-speckle-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/standing-white-and-grey-speckle-by-vic-wright>
+{'height': '13',
+ 'media': '',
+ 'name': 'Standing White and Grey speckle by Vic Wright',
+ 'price': '325.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/standing-white-and-grey-speckle-by-vic-wright',
+ 'width': '14'}
+2023-01-18 18:02:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/meld-3-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:03 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/meld-3-by-vic-wright
+2023-01-18 18:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/standing-triple-black-grey-and-white-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:04 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/standing-triple-black-grey-and-white-by-vic-wright
+2023-01-18 18:02:04 [scrapy.extensions.logstats] INFO: Crawled 97 pages (at 97 pages/min), scraped 67 items (at 67 items/min)
+2023-01-18 18:02:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/white-sitting-double-by-vic-wright> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:04 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/white-sitting-double-by-vic-wright
+2023-01-18 18:02:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/and-the-sunset-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/and-the-sunset-by-jane-ward>
+{'height': '90',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'And The Sunset by Jane Ward',
+ 'price': '840.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/and-the-sunset-by-jane-ward',
+ 'width': '70'}
+2023-01-18 18:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/to-the-zenith-sheight-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/to-the-zenith-sheight-by-jane-ward>
+{'height': '120',
+ 'media': 'Digital print on canvas with dissolved ink and pigment Own Art '
+          'Scheme',
+ 'name': "To The Zenith'sHeight by Jane Ward",
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/to-the-zenith-sheight-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/from-the-curved-horizon-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/from-the-curved-horizon-by-jane-ward>
+{'height': '120',
+ 'media': 'Digital print on canvas with dissolved ink and gold leaf Own Art '
+          'Scheme',
+ 'name': 'From the Curved Horizon by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/from-the-curved-horizon-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/spangled-by-john-greenwood> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/spangled-by-john-greenwood>
+{'height': '30',
+ 'media': 'Oil on Canvas £300 a month on the Own Art Scheme, email galleries '
+          'for details',
+ 'name': 'Spangled by John Greenwood',
+ 'price': '3,000.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/spangled-by-john-greenwood',
+ 'width': '35'}
+2023-01-18 18:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/el-dorado-by-john-greenwood> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/el-dorado-by-john-greenwood>
+{'height': '38',
+ 'media': 'Oil on Gessoed canvas on Board £380 a month on the Own Art Scheme,',
+ 'name': 'El Dorado by John Greenwood',
+ 'price': '3,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/el-dorado-by-john-greenwood',
+ 'width': '45'}
+2023-01-18 18:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-6-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-6-by-victoria-ashdown>
+{'height': '21',
+ 'media': 'porcelain, green acrylic, concrete, wire Original Artwork Using the '
+          'ceramic process of extruding Ashdown lets gravity determine the '
+          'shape of the porcelain. Then uses laser cut plastic and wood to fit '
+          'into the negative spaces created by the porcelain. These processes '
+          'combine analogy and digital technology. Read more about the artist '
+          'here',
+ 'name': 'Emplacement 6 by Victoria Ashdown',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-6-by-victoria-ashdown',
+ 'width': '20'}
+2023-01-18 18:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-7-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-7-by-victoria-ashdown>
+{'height': '23',
+ 'media': 'Porcelain, orange acrylic, concrete, wire Original Artwork Using '
+          'the ceramic process of extruding Ashdown lets gravity determine the '
+          'shape of the porcelain. Then uses laser cut plastic and wood to fit '
+          'into the negative spaces created by the porcelain. These processes '
+          'combine analogy and digital technology. Read more about the artist '
+          'here',
+ 'name': 'Emplacement 7 by Victoria Ashdown',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-7-by-victoria-ashdown',
+ 'width': '13'}
+2023-01-18 18:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/follow-by-deanna-lewis> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/follow-by-deanna-lewis>
+{'height': '50',
+ 'media': 'Acrylic and oil paint on canvas Original artwork For this '
+          'particular collection of work Deanna studied finger prints left on '
+          'computer screens, adding and removing oil paint to embody them.The '
+          'white areas of her paintings represent the idea of an ‘edge’, a '
+          'conceptual and formal device used to emphasise the concentrated '
+          'detail along the line she creates. Read more about the artist',
+ 'name': '"Follow" by Deanna Lewis',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/follow-by-deanna-lewis',
+ 'width': '35'}
+2023-01-18 18:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/point-by-deanna-lewis> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/point-by-deanna-lewis>
+{'height': '50',
+ 'media': 'Acrylic and oil paint on canvas Original artwork For this '
+          'particular collection of work Deanna studied finger prints left on '
+          'computer screens, adding and removing oil paint to embody them.The '
+          'white areas of her paintings represent the idea of an ‘edge’, a '
+          'conceptual and formal device used to emphasise the concentrated '
+          'detail along the line she creates. Read more about the artist',
+ 'name': '"Point" by Deanna Lewis',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/point-by-deanna-lewis',
+ 'width': '35'}
+2023-01-18 18:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/shift-by-deanna-lewis> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/shift-by-deanna-lewis>
+{'height': '60',
+ 'media': 'Acrylic and oil paint on canvas Original artwork For this '
+          'particular collection of work Deanna studied finger prints left on '
+          'computer screens, adding and removing oil paint to embody them.The '
+          'white areas of her paintings represent the idea of an ‘edge’, a '
+          'conceptual and formal device used to emphasise the concentrated '
+          'detail along the line she creates. Read more about the artist',
+ 'name': '"Shift" by Deanna Lewis',
+ 'price': '440.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/shift-by-deanna-lewis',
+ 'width': '40'}
+2023-01-18 18:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/exchange-by-deanna-lewis> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/exchange-by-deanna-lewis>
+{'height': '50',
+ 'media': 'Acrylic and oil paint on canvas Original artwork For this '
+          'particular collection of work Deanna studied finger prints left on '
+          'computer screens, adding and removing oil paint to embody them.The '
+          'white areas of her paintings represent the idea of an ‘edge’, a '
+          'conceptual and formal device used to emphasise the concentrated '
+          'detail along the line she creates. Read more about the artist',
+ 'name': '"Exchange" by Deanna Lewis',
+ 'price': '340.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/exchange-by-deanna-lewis',
+ 'width': '35'}
+2023-01-18 18:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/push-by-deanna-lewis> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/push-by-deanna-lewis>
+{'height': '60',
+ 'media': 'Acrylic and oil paint on canvas Original artwork For this '
+          'particular collection of work Deanna studied finger prints left on '
+          'computer screens, adding and removing oil paint to embody them.The '
+          'white areas of her paintings represent the idea of an ‘edge’, a '
+          'conceptual and formal device used to emphasise the concentrated '
+          'detail along the line she creates. Read more about the artist',
+ 'name': '"Push" by Deanna Lewis',
+ 'price': '440.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/push-by-deanna-lewis',
+ 'width': '40'}
+2023-01-18 18:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/stroke-by-deanna-lewis> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/stroke-by-deanna-lewis>
+{'height': '60',
+ 'media': 'Acrylic and oil paint on canvas Original artwork For this '
+          'particular collection of work Deanna studied finger prints left on '
+          'computer screens, adding and removing oil paint to embody them.The '
+          'white areas of her paintings represent the idea of an ‘edge’, a '
+          'conceptual and formal device used to emphasise the concentrated '
+          'detail along the line she creates. Read more about the artist',
+ 'name': '"Stroke" by Deanna Lewis',
+ 'price': '440.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/stroke-by-deanna-lewis',
+ 'width': '40'}
+2023-01-18 18:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-reaches-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-reaches-by-chris-hawtin>
+{'height': '60',
+ 'media': 'Oil on canvas Original artwork Own Art Scheme',
+ 'name': 'The Reaches by Chris Hawtin',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-reaches-by-chris-hawtin',
+ 'width': '50'}
+2023-01-18 18:02:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-chaos-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:14 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/the-chaos-by-chris-hawtin
+2023-01-18 18:02:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/with-tomorrow-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/with-tomorrow-by-chris-hawtin>
+{'height': '60',
+ 'media': 'Oil on canvas Original artwork Own Art Scheme',
+ 'name': 'With Tomorrow by Chris Hawtin',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/with-tomorrow-by-chris-hawtin',
+ 'width': '50'}
+2023-01-18 18:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/sshhh-by-dominic-bradnum> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:15 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/sshhh-by-dominic-bradnum
+2023-01-18 18:02:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/message-of-undying-love-by-dominic-bradnum> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/message-of-undying-love-by-dominic-bradnum>
+{'height': '150',
+ 'media': 'oil, watercolour, charcoal and ink on canvas Own Art Scheme',
+ 'name': 'Message Of Undying Love by Dominic Bradnum',
+ 'price': '2,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/message-of-undying-love-by-dominic-bradnum',
+ 'width': '110'}
+2023-01-18 18:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/wherever-you-go-i-will-follow-by-dominic-bradnum> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:16 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/wherever-you-go-i-will-follow-by-dominic-bradnum
+2023-01-18 18:02:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-high-way-peak-by-jane-ward-1> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-high-way-peak-by-jane-ward-1>
+{'height': '70',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'The High Way (Peak) by Jane Ward',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-high-way-peak-by-jane-ward-1',
+ 'width': '90'}
+2023-01-18 18:02:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/unfathomable-deeps-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/unfathomable-deeps-by-jane-ward>
+{'height': '90',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'Unfathomable Deeps by Jane Ward',
+ 'price': '840.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/unfathomable-deeps-by-jane-ward',
+ 'width': '70'}
+2023-01-18 18:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/of-earth-air-and-water-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/of-earth-air-and-water-by-jane-ward>
+{'height': '90',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'Of Earth, Air and Water by Jane Ward',
+ 'price': '840.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/of-earth-air-and-water-by-jane-ward',
+ 'width': '70'}
+2023-01-18 18:02:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/in-these-solitudes-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/in-these-solitudes-by-jane-ward>
+{'height': '90',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'In These Solitudes by Jane Ward',
+ 'price': '840.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/in-these-solitudes-by-jane-ward',
+ 'width': '70'}
+2023-01-18 18:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/from-frozen-floods-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/from-frozen-floods-by-jane-ward>
+{'height': '90',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'From Frozen Floods by Jane Ward',
+ 'price': '840.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/from-frozen-floods-by-jane-ward',
+ 'width': '70'}
+2023-01-18 18:02:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/broad-vales-between-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/broad-vales-between-by-jane-ward>
+{'height': '90',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'Broad Vales Between by Jane Ward',
+ 'price': '840.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/broad-vales-between-by-jane-ward',
+ 'width': '70'}
+2023-01-18 18:02:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=7> (referer: https://www.bearspace.co.uk//purchase?page=6)
+2023-01-18 18:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/museum-of-now-by-john-greenwood> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/museum-of-now-by-john-greenwood>
+{'height': '38',
+ 'media': 'Oil on Gessoed canvas on Board £980 a month on the Own Art Scheme,',
+ 'name': 'Museum of now by John Greenwood',
+ 'price': '9,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/museum-of-now-by-john-greenwood',
+ 'width': '45'}
+2023-01-18 18:02:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/entry-point-by-joseph-stokes> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/entry-point-by-joseph-stokes>
+{'height': '40',
+ 'media': '£320 a month on the Own Art Scheme',
+ 'name': 'Entry Point by Joseph Stokes',
+ 'price': '720.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/entry-point-by-joseph-stokes',
+ 'width': '50'}
+2023-01-18 18:02:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/where-stars-dissolve-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/where-stars-dissolve-by-bella-easton>
+{'height': '41',
+ 'media': '',
+ 'name': 'Where Stars Dissolve by Bella Easton',
+ 'price': '3,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/where-stars-dissolve-by-bella-easton',
+ 'width': '56'}
+2023-01-18 18:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/angel-heart-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=5)
+2023-01-18 18:02:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/angel-heart-by-bella-easton>
+{'height': '41',
+ 'media': '',
+ 'name': 'ANGEL HEART by Bella Easton',
+ 'price': '3,200.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/angel-heart-by-bella-easton',
+ 'width': '56'}
+2023-01-18 18:02:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=8> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-5-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-5-by-victoria-ashdown>
+{'height': '26',
+ 'media': 'porcelain, pink acrylic, wood, steel, wire Original Artwork Using '
+          'the ceramic process of extruding Ashdown lets gravity determine the '
+          'shape of the porcelain. Then uses laser cut plastic and wood to fit '
+          'into the negative spaces created by the porcelain. These processes '
+          'combine analogy and digital technology. Read more about the artist '
+          'here',
+ 'name': 'Emplacement 5 by Victoria Ashdown',
+ 'price': '240.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-5-by-victoria-ashdown',
+ 'width': '40'}
+2023-01-18 18:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-4-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-4-by-victoria-ashdown>
+{'height': '25',
+ 'media': 'Original Artwork Using the ceramic process of extruding Ashdown '
+          'lets gravity determine the shape of the porcelain. Then uses laser '
+          'cut plastic and wood to fit into the negative spaces created by the '
+          'porcelain. These processes combine analogy and digital technology. '
+          'Read more about the artist here',
+ 'name': 'Emplacement 4 by Victoria Ashdown',
+ 'price': '180.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-4-by-victoria-ashdown',
+ 'width': '43'}
+2023-01-18 18:02:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-3-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-3-by-victoria-ashdown>
+{'height': '42',
+ 'media': 'Green acrylic, wood, steel, wire Original Artwork Using the ceramic '
+          'process of extruding Ashdown lets gravity determine the shape of '
+          'the porcelain. Then uses laser cut plastic and wood to fit into the '
+          'negative spaces created by the porcelain. These processes combine '
+          'analogy and digital technology. Read more about the artist here',
+ 'name': 'Emplacement 3 by Victoria Ashdown',
+ 'price': '180.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-3-by-victoria-ashdown',
+ 'width': '15'}
+2023-01-18 18:02:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-2-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-2-by-victoria-ashdown>
+{'height': '4',
+ 'media': 'Yellow acrylic, steel and wire Original Artwork Using the ceramic '
+          'process of extruding Ashdown lets gravity determine the shape of '
+          'the porcelain. Then uses laser cut plastic and wood to fit into the '
+          'negative spaces created by the porcelain. These processes combine '
+          'analogy and digital technology. Read more about the artist here',
+ 'name': 'Emplacement 2 by Victoria Ashdown',
+ 'price': '180.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-2-by-victoria-ashdown',
+ 'width': '26'}
+2023-01-18 18:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/emplacement-1-by-victoria-ashdown> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/emplacement-1-by-victoria-ashdown>
+{'height': '30',
+ 'media': 'Porcelain, red acrylic, steel, wire Original Artwork Using the '
+          'ceramic process of extruding Ashdown lets gravity determine the '
+          'shape of the porcelain. Then uses laser cut plastic and wood to fit '
+          'into the negative spaces created by the porcelain. These processes '
+          'combine analogy and digital technology. Read more about the artist '
+          'here',
+ 'name': 'Emplacement 1 by Victoria Ashdown',
+ 'price': '140.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/emplacement-1-by-victoria-ashdown',
+ 'width': '30'}
+2023-01-18 18:02:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/skywalk-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/skywalk-by-jane-ward>
+{'height': '70',
+ 'media': 'Digital print on Canvas with dissolved ink',
+ 'name': 'Skywalk by Jane Ward',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/skywalk-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/yellow-wall-by-lucinda-metcalfe-1> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:28 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/yellow-wall-by-lucinda-metcalfe-1
+2023-01-18 18:02:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-high-way-peak-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-high-way-peak-by-jane-ward>
+{'height': '70',
+ 'media': 'Digital print on Canvas with hand dissolved ink Own Art Scheme',
+ 'name': 'The High Way (Pass) by Jane Ward',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-high-way-peak-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/bridge-over-garden-city-state-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:29 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/bridge-over-garden-city-state-by-jane-ward
+2023-01-18 18:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/factory-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:30 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/factory-by-chris-hawtin
+2023-01-18 18:02:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/capital-drone-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/capital-drone-by-chris-hawtin>
+{'height': '1413.5',
+ 'media': 'Sculpture with base',
+ 'name': 'Capital Drone by Chris Hawtin',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/capital-drone-by-chris-hawtin',
+ 'width': '22'}
+2023-01-18 18:02:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/take-our-time-someday-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/take-our-time-someday-by-chris-hawtin>
+{'height': '30',
+ 'media': 'Oil and acrylic on canvas Own Art Scheme',
+ 'name': 'Take Our Time (Someday) by Chris Hawtin',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/take-our-time-someday-by-chris-hawtin',
+ 'width': '40'}
+2023-01-18 18:02:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/embers-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/embers-by-chris-hawtin>
+{'height': '30',
+ 'media': 'Oil and acrylic on canvas Own Art Scheme',
+ 'name': 'Embers by Chris Hawtin',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/embers-by-chris-hawtin',
+ 'width': '40'}
+2023-01-18 18:02:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/loneliness-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:32 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/loneliness-by-chris-hawtin
+2023-01-18 18:02:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/guiding-light-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:32 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/guiding-light-by-chris-hawtin
+2023-01-18 18:02:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-castle-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-castle-by-chris-hawtin>
+{'height': '70',
+ 'media': 'Oil & acrylic on canvas Own Art Scheme',
+ 'name': 'The Castle by Chris Hawtin',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-castle-by-chris-hawtin',
+ 'width': '90'}
+2023-01-18 18:02:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/myriorama-room-series-lamp-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/myriorama-room-series-lamp-by-bella-easton>
+{'height': '117',
+ 'media': 'Artist: Bella Easton 88 hand coloured copper plate etchings on '
+          '400gsm Velin Arches and conservation board £280 a month on the Own '
+          'Art Scheme',
+ 'name': 'MYRIORAMA ROOM series - LAMP by Bella Easton',
+ 'price': '2,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/myriorama-room-series-lamp-by-bella-easton',
+ 'width': '89'}
+2023-01-18 18:02:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/myriorama-room-series-fireplace-ii-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/myriorama-room-series-fireplace-ii-by-bella-easton>
+{'height': '117',
+ 'media': 'Artist: Bella Easton 88 hand coloured copper plate etchings on '
+          '400gsm Velin Arches and conservation board £280 a month on the Own '
+          'Art Scheme',
+ 'name': 'MYRIORAMA ROOM series – FIREPLACE II by Bella Easton',
+ 'price': '2,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/myriorama-room-series-fireplace-ii-by-bella-easton',
+ 'width': '89'}
+2023-01-18 18:02:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/chiral-vi-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/chiral-vi-by-bella-easton>
+{'height': '18',
+ 'media': '£94 a month on the Own Art Scheme, click here for details',
+ 'name': 'Chiral VI by Bella Easton',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/chiral-vi-by-bella-easton',
+ 'width': '40'}
+2023-01-18 18:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/chiral-v-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/chiral-v-by-bella-easton>
+{'height': '18',
+ 'media': '£94 a month on the Own Art Scheme, click here for details',
+ 'name': 'Chiral V by Bella Easton',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/chiral-v-by-bella-easton',
+ 'width': '40'}
+2023-01-18 18:02:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/chiral-iv-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/chiral-iv-by-bella-easton>
+{'height': '18',
+ 'media': '£95 a month on the Own Art Scheme, click here for details',
+ 'name': 'Chiral IV by Bella Easton',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/chiral-iv-by-bella-easton',
+ 'width': '40'}
+2023-01-18 18:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/chiral-iii-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/chiral-iii-by-bella-easton>
+{'height': '18',
+ 'media': '£94 a month on the Own Art Scheme, click here for details',
+ 'name': 'Chiral III by Bella Easton',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/chiral-iii-by-bella-easton',
+ 'width': '40'}
+2023-01-18 18:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/chiral-ii-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/chiral-ii-by-bella-easton>
+{'height': '18',
+ 'media': '£94 a month on the Own Art Scheme, click here for details',
+ 'name': 'Chiral II by Bella Easton',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/chiral-ii-by-bella-easton',
+ 'width': '40'}
+2023-01-18 18:02:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/overland-1-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/overland-1-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival digital print on canvas where there is a skywalk suspended '
+          'between the peaks. It’s hard to imagine the land snowed under and '
+          'all the winter sports activity as I walk along the wanderweg in '
+          'this sunny warmth listening to rivers, cowbells, birdsong, enjoying '
+          'the mountain air and beautiful flora of the meadows.’ The contrast '
+          'of the architectural mountainous regions, flora and fauna and small '
+          'pockets of houses and huts was great inspiration for the artist who '
+          'approaches city or mountain scape in the same manner, finding a '
+          'balance of nature and architecture then colliding them into a new '
+          'fantastic world.',
+ 'name': 'Overland 1 by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/overland-1-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/overland-2-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/overland-2-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival digital print on canvas where there is a skywalk suspended '
+          'between the peaks. It’s hard to imagine the land snowed under and '
+          'all the winter sports activity as I walk along the wanderweg in '
+          'this sunny warmth listening to rivers, cowbells, birdsong, enjoying '
+          'the mountain air and beautiful flora of the meadows.’ The contrast '
+          'of the architectural mountainous regions, flora and fauna and small '
+          'pockets of houses and huts was great inspiration for the artist who '
+          'approaches city or mountain scape in the same manner, finding a '
+          'balance of nature and architecture then colliding them into a new '
+          'fantastic world.',
+ 'name': 'Overland 2 by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/overland-2-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/overland-3-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/overland-3-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival digital print on canvas where there is a skywalk suspended '
+          'between the peaks. It’s hard to imagine the land snowed under and '
+          'all the winter sports activity as I walk along the wanderweg in '
+          'this sunny warmth listening to rivers, cowbells, birdsong, enjoying '
+          'the mountain air and beautiful flora of the meadows.’ The contrast '
+          'of the architectural mountainous regions, flora and fauna and small '
+          'pockets of houses and huts was great inspiration for the artist who '
+          'approaches city or mountain scape in the same manner, finding a '
+          'balance of nature and architecture then colliding them into a new '
+          'fantastic world.',
+ 'name': 'Overland 3 by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/overland-3-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/overland-4-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/overland-4-by-jane-ward>
+{'height': '120',
+ 'media': 'Archival digital print on canvas where there is a skywalk suspended '
+          'between the peaks. It’s hard to imagine the land snowed under and '
+          'all the winter sports activity as I walk along the wanderweg in '
+          'this sunny warmth listening to rivers, cowbells, birdsong, enjoying '
+          'the mountain air and beautiful flora of the meadows.’ The contrast '
+          'of the architectural mountainous regions, flora and fauna and small '
+          'pockets of houses and huts was great inspiration for the artist who '
+          'approaches city or mountain scape in the same manner, finding a '
+          'balance of nature and architecture then colliding them into a new '
+          'fantastic world.',
+ 'name': 'Overland 4 by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/overland-4-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/alpine-1-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/alpine-1-by-jane-ward>
+{'height': '30',
+ 'media': 'Digital print on canvas with hand dissolved ink We are pleased to '
+          'present a brand new Alpine series of works by Jane Ward based on '
+          'her recent 3-month residency in the Swiss Alps in 2017. Jane stayed '
+          'in a fantastic disused school building in the Alpine village of '
+          'Feutersoey, in the Alpine Region of Canton Bern. The residency took '
+          'place in early summer when snow was still on the mountain tops but '
+          'the Alpine area was in full bloom. In one of her reports Jane says '
+          '‘There is still snow on the top of the mountains and cable cars '
+          'take you way up to the Diablerets range where there is a skywalk '
+          'suspended between the peaks. It’s hard to imagine the land snowed '
+          'under and all the winter sports activity as I walk along the '
+          'wanderweg in this sunny warmth listening to rivers, cowbells, '
+          'birdsong, enjoying the mountain air and beautiful flora of the '
+          'meadows.’ The contrast of the architectural mountainous regions, '
+          'flora and fauna and small pockets of houses and huts was great '
+          'inspiration for the artist who approaches city or mountain scape in '
+          'the same manner, finding a balance of nature and architecture then '
+          'colliding them into a new fantastic world.',
+ 'name': 'Alpine 1 by Jane Ward',
+ 'price': '290.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/alpine-1-by-jane-ward',
+ 'width': '40'}
+2023-01-18 18:02:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/alpine-2-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/alpine-2-by-jane-ward>
+{'height': '30',
+ 'media': 'Digital print on canvas with hand dissolved ink We are pleased to '
+          'present a brand new Alpine series of works by Jane Ward based on '
+          'her recent 3-month residency in the Swiss Alps in 2017. Jane stayed '
+          'in a fantastic disused school building in the Alpine village of '
+          'Feutersoey, in the Alpine Region of Canton Bern. The residency took '
+          'place in early summer when snow was still on the mountain tops but '
+          'the Alpine area was in full bloom. In one of her reports Jane says '
+          '‘There is still snow on the top of the mountains and cable cars '
+          'take you way up to the Diablerets range where there is a skywalk '
+          'suspended between the peaks. It’s hard to imagine the land snowed '
+          'under and all the winter sports activity as I walk along the '
+          'wanderweg in this sunny warmth listening to rivers, cowbells, '
+          'birdsong, enjoying the mountain air and beautiful flora of the '
+          'meadows.’ The contrast of the architectural mountainous regions, '
+          'flora and fauna and small pockets of houses and huts was great '
+          'inspiration for the artist who approaches city or mountain scape in '
+          'the same manner, finding a balance of nature and architecture then '
+          'colliding them into a new fantastic world.',
+ 'name': 'Alpine 2 by Jane Ward',
+ 'price': '290.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/alpine-2-by-jane-ward',
+ 'width': '40'}
+2023-01-18 18:02:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/alpine-3-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/alpine-3-by-jane-ward>
+{'height': '30',
+ 'media': 'Digital print on canvas with hand dissolved ink We are pleased to '
+          'present a brand new Alpine series of works by Jane Ward based on '
+          'her recent 3-month residency in the Swiss Alps in 2017. Jane stayed '
+          'in a fantastic disused school building in the Alpine village of '
+          'Feutersoey, in the Alpine Region of Canton Bern. The residency took '
+          'place in early summer when snow was still on the mountain tops but '
+          'the Alpine area was in full bloom. In one of her reports Jane says '
+          '‘There is still snow on the top of the mountains and cable cars '
+          'take you way up to the Diablerets range where there is a skywalk '
+          'suspended between the peaks. It’s hard to imagine the land snowed '
+          'under and all the winter sports activity as I walk along the '
+          'wanderweg in this sunny warmth listening to rivers, cowbells, '
+          'birdsong, enjoying the mountain air and beautiful flora of the '
+          'meadows.’ The contrast of the architectural mountainous regions, '
+          'flora and fauna and small pockets of houses and huts was great '
+          'inspiration for the artist who approaches city or mountain scape in '
+          'the same manner, finding a balance of nature and architecture then '
+          'colliding them into a new fantastic world.',
+ 'name': 'Alpine 4 by Jane Ward',
+ 'price': '290.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/alpine-3-by-jane-ward',
+ 'width': '40'}
+2023-01-18 18:02:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/alpine-3-by-jane-ward-1> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/alpine-3-by-jane-ward-1>
+{'height': '30',
+ 'media': 'Digital print on canvas with hand dissolved ink We are pleased to '
+          'present a brand new Alpine series of works by Jane Ward based on '
+          'her recent 3-month residency in the Swiss Alps in 2017. Jane stayed '
+          'in a fantastic disused school building in the Alpine village of '
+          'Feutersoey, in the Alpine Region of Canton Bern. The residency took '
+          'place in early summer when snow was still on the mountain tops but '
+          'the Alpine area was in full bloom. In one of her reports Jane says '
+          '‘There is still snow on the top of the mountains and cable cars '
+          'take you way up to the Diablerets range where there is a skywalk '
+          'suspended between the peaks. It’s hard to imagine the land snowed '
+          'under and all the winter sports activity as I walk along the '
+          'wanderweg in this sunny warmth listening to rivers, cowbells, '
+          'birdsong, enjoying the mountain air and beautiful flora of the '
+          'meadows.’ The contrast of the architectural mountainous regions, '
+          'flora and fauna and small pockets of houses and huts was great '
+          'inspiration for the artist who approaches city or mountain scape in '
+          'the same manner, finding a balance of nature and architecture then '
+          'colliding them into a new fantastic world.',
+ 'name': 'Alpine 3 by Jane Ward',
+ 'price': '290.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/alpine-3-by-jane-ward-1',
+ 'width': '40'}
+2023-01-18 18:02:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/summer-breeze-by-lucinda-metcalfe> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:42 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/summer-breeze-by-lucinda-metcalfe
+2023-01-18 18:02:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/yeti-over-mount-fuji-pantone-yellow-by-phil-ashcroft> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/yeti-over-mount-fuji-pantone-yellow-by-phil-ashcroft>
+{'height': '42',
+ 'media': 'screenprint on paper',
+ 'name': 'YETI OVER MOUNT FUJI (PANTONE YELLOW) by Phil Ashcroft',
+ 'price': '150.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/yeti-over-mount-fuji-pantone-yellow-by-phil-ashcroft',
+ 'width': '59.4'}
+2023-01-18 18:02:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/ennio-fallen-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/ennio-fallen-by-chris-hawtin>
+{'height': '198',
+ 'media': 'Oil, enamel, acrylic and plaster on canvas Own Art Scheme',
+ 'name': 'Ennio Fallen by Chris Hawtin',
+ 'price': '4,000.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/ennio-fallen-by-chris-hawtin',
+ 'width': '198'}
+2023-01-18 18:02:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/venn-s-bluff-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/venn-s-bluff-by-chris-hawtin>
+{'height': '180',
+ 'media': 'Oil, enamel, acrylic and plaster on canvas Own Art Scheme',
+ 'name': "Venn's Bluff by Chris Hawtin",
+ 'price': '3,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/venn-s-bluff-by-chris-hawtin',
+ 'width': '180'}
+2023-01-18 18:02:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-wheel-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-wheel-by-chris-hawtin>
+{'height': '198',
+ 'media': 'Oil, enamel, acrylic and plaster on canvas Own Art Scheme',
+ 'name': 'The Wheel by Chris Hawtin',
+ 'price': '4,000.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-wheel-by-chris-hawtin',
+ 'width': '198'}
+2023-01-18 18:02:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=9> (referer: https://www.bearspace.co.uk//purchase?page=8)
+2023-01-18 18:02:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-mortal-frame-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-mortal-frame-by-chris-hawtin>
+{'height': '99',
+ 'media': 'Oil & acrylic on canvas Own Art Scheme',
+ 'name': 'The Mortal Frame by Chris Hawtin',
+ 'price': '1,600.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-mortal-frame-by-chris-hawtin',
+ 'width': '99'}
+2023-01-18 18:02:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/sovereign> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/sovereign>
+{'height': '1413.5',
+ 'media': 'Sculpture with base',
+ 'name': 'Sovereign',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/sovereign',
+ 'width': '22'}
+2023-01-18 18:02:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/recon-drones-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/recon-drones-by-chris-hawtin>
+{'height': '1413.5',
+ 'media': 'Sculpture with base',
+ 'name': 'Recon Drones by Chris Hawtin',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/recon-drones-by-chris-hawtin',
+ 'width': '22'}
+2023-01-18 18:02:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/copy-of-recon-drones-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=7)
+2023-01-18 18:02:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/copy-of-recon-drones-by-chris-hawtin>
+{'height': '1413.5',
+ 'media': 'Sculpture with base',
+ 'name': 'copy of Recon Drones by Chris Hawtin',
+ 'price': '640.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/copy-of-recon-drones-by-chris-hawtin',
+ 'width': '22'}
+2023-01-18 18:02:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk//purchase?page=10> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/myriorama-room-series-armchair-by-bella-easton> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/myriorama-room-series-armchair-by-bella-easton>
+{'height': '117',
+ 'media': 'Artist: Bella Easton 88 hand coloured copper plate etchings on '
+          '400gsm Velin Arches and conservation board £280 a month on the Own '
+          'Art Scheme',
+ 'name': 'MYRIORAMA ROOM series –ARMCHAIR by Bella Easton',
+ 'price': '2,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/myriorama-room-series-armchair-by-bella-easton',
+ 'width': '89'}
+2023-01-18 18:02:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-dawn-chorus-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-dawn-chorus-by-chris-hawtin>
+{'height': '160',
+ 'media': 'Oil and acrylic on Canvas Own Art Scheme',
+ 'name': 'The Dawn Chorus by Chris Hawtin',
+ 'price': '3,800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-dawn-chorus-by-chris-hawtin',
+ 'width': '170'}
+2023-01-18 18:02:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-hidden-city-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-hidden-city-by-chris-hawtin>
+{'height': '101',
+ 'media': 'Oil and enamel on canvas Own Art Scheme',
+ 'name': 'The Hidden City by Chris Hawtin',
+ 'price': '1,600.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-hidden-city-by-chris-hawtin',
+ 'width': '87'}
+2023-01-18 18:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/march-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:50 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/march-by-chris-hawtin
+2023-01-18 18:02:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-vandal-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-vandal-by-chris-hawtin>
+{'height': '56',
+ 'media': 'Screenprint on paper Own Art Scheme',
+ 'name': 'The Vandal by Chris Hawtin',
+ 'price': '250.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-vandal-by-chris-hawtin',
+ 'width': '76'}
+2023-01-18 18:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-scientist-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/the-scientist-by-chris-hawtin>
+{'height': '56',
+ 'media': 'Screen print on paper Own Art Scheme',
+ 'name': 'The Scientist by Chris Hawtin',
+ 'price': '250.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/the-scientist-by-chris-hawtin',
+ 'width': '76'}
+2023-01-18 18:02:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/tilt-by-chris-hawton> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/tilt-by-chris-hawton>
+{'height': '46',
+ 'media': 'Oil and acrylic on canvas Own Art Scheme',
+ 'name': 'Tilt by Chris Hawton',
+ 'price': '800.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/tilt-by-chris-hawton',
+ 'width': '51'}
+2023-01-18 18:02:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/the-cope-marsh-station> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:52 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/the-cope-marsh-station
+2023-01-18 18:02:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/seth-s-narrows-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:53 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/seth-s-narrows-by-chris-hawtin
+2023-01-18 18:02:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/relic-engines-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/relic-engines-by-chris-hawtin>
+{'height': '40',
+ 'media': 'Oil, enamel and acrylic on canvas Own Art Scheme',
+ 'name': 'Relic Engines by Chris Hawtin',
+ 'price': '690.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/relic-engines-by-chris-hawtin',
+ 'width': '45'}
+2023-01-18 18:02:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/protist-peak-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:54 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.bearspace.co.uk/product-page/protist-peak-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+Traceback (most recent call last):
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/defer.py", line 254, in aiter_errback
+    yield await it.__anext__()
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/python.py", line 366, in __anext__
+    return await self.data.__anext__()
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/python.py", line 347, in _async_chain
+    async for o in as_async_generator(it):
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/python.py", line 366, in __anext__
+    return await self.data.__anext__()
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/python.py", line 347, in _async_chain
+    async for o in as_async_generator(it):
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/utils/asyncgen.py", line 14, in as_async_generator
+    async for r in it:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/core/spidermw.py", line 90, in process_async
+    async for r in iterable:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/spidermiddlewares/offsite.py", line 32, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/core/spidermw.py", line 90, in process_async
+    async for r in iterable:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/spidermiddlewares/referer.py", line 339, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/core/spidermw.py", line 90, in process_async
+    async for r in iterable:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/spidermiddlewares/urllength.py", line 31, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/core/spidermw.py", line 90, in process_async
+    async for r in iterable:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/spidermiddlewares/depth.py", line 36, in process_spider_output_async
+    async for r in result or ():
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/core/spidermw.py", line 90, in process_async
+    async for r in iterable:
+  File "/Users/muhammadfakhar/practice/heni/env/lib/python3.10/site-packages/scrapy/spiders/crawl.py", line 121, in _parse_response
+    for request_or_item in iterate_spider_output(cb_res):
+  File "/Users/muhammadfakhar/practice/heni/bearspace_project/bearspace_project/spiders/bearspace_spider.py", line 144, in parse_item
+    yield self.bearspace_parser.parse(response, args, kwargs)
+  File "/Users/muhammadfakhar/practice/heni/bearspace_project/bearspace_project/spiders/bearspace_spider.py", line 37, in parse
+    if not self.in_stock(response):
+  File "/Users/muhammadfakhar/practice/heni/bearspace_project/bearspace_project/spiders/bearspace_spider.py", line 63, in in_stock
+    return cart_btn.lower() == 'add to cart'
+AttributeError: 'NoneType' object has no attribute 'lower'
+2023-01-18 18:02:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/garden-city-state-1b-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/garden-city-state-1b-by-jane-ward>
+{'height': '45',
+ 'media': 'Digital print with hand dissolved ink and gold leaf Each edition is '
+          'hand finished based on the same print, therefore each edition is '
+          'bespoke .  Media such as gold leaf will change dependent on the '
+          'artists chosen application at that time.',
+ 'name': 'Garden City State 1b by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/garden-city-state-1b-by-jane-ward',
+ 'width': '60'}
+2023-01-18 18:02:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/garden-city-state-1c-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/garden-city-state-1c-by-jane-ward>
+{'height': '45',
+ 'media': 'Digital print with hand dissolved ink and gold leaf Each edition is '
+          'hand finished based on the same print, therefore each edition is '
+          'bespoke .  Media such as gold leaf will change dependent on the '
+          'artists chosen application at that time.',
+ 'name': 'Garden City State 1c by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/garden-city-state-1c-by-jane-ward',
+ 'width': '60'}
+2023-01-18 18:02:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/then-all-was-calm> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:56 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/then-all-was-calm
+2023-01-18 18:02:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/i-crash-into-your-arms> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:57 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/i-crash-into-your-arms
+2023-01-18 18:02:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/under-a-bruised-and-leaden-sky-by-dominic-badnum> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:02:57 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/under-a-bruised-and-leaden-sky-by-dominic-badnum
+2023-01-18 18:02:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/gcs-high-rise-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:02:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/gcs-high-rise-jane-ward>
+{'height': '60',
+ 'media': 'Digital print with dissolved ink',
+ 'name': '(GCS) High Rise - Jane Ward',
+ 'price': '990.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/gcs-high-rise-jane-ward',
+ 'width': '80'}
+2023-01-18 18:02:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/feralis-by-suzanne-moxhay> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:02:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/feralis-by-suzanne-moxhay>
+{'height': '55',
+ 'media': 'Archival Digital print',
+ 'name': 'Feralis by Suzanne Moxhay',
+ 'price': '690.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/feralis-by-suzanne-moxhay',
+ 'width': '68'}
+2023-01-18 18:02:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/boondocks-by-suzanne-moxhay> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:02:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/boondocks-by-suzanne-moxhay>
+{'height': '45',
+ 'media': 'Archival Digital Print',
+ 'name': 'Boondocks by Suzanne Moxhay',
+ 'price': '690.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/boondocks-by-suzanne-moxhay',
+ 'width': '92'}
+2023-01-18 18:03:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/athne-by-suzanne-moxhay> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/athne-by-suzanne-moxhay>
+{'height': '50',
+ 'media': 'Archival Digital Print',
+ 'name': 'Athne by Suzanne Moxhay',
+ 'price': '690.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/athne-by-suzanne-moxhay',
+ 'width': '100'}
+2023-01-18 18:03:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/gloaming-by-suzanne-moxhay> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/gloaming-by-suzanne-moxhay>
+{'height': '40',
+ 'media': 'Archival Digital print',
+ 'name': 'Gloaming by Suzanne Moxhay',
+ 'price': '690.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/gloaming-by-suzanne-moxhay',
+ 'width': '60'}
+2023-01-18 18:03:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/bayou> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/bayou>
+{'height': '44',
+ 'media': 'Archival digital print',
+ 'name': 'Bayou',
+ 'price': '690.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/bayou',
+ 'width': '100'}
+2023-01-18 18:03:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-5> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-5>
+{'height': '60',
+ 'media': 'Archival inkjet print',
+ 'name': "'Retreating, then advancing repeatedly over the centuries'5 by Janie "
+         'Kidston',
+ 'price': '540.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-5',
+ 'width': '50'}
+2023-01-18 18:03:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-3-by-janie-kidston> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-3-by-janie-kidston>
+{'height': '60',
+ 'media': 'Archival inkjet print',
+ 'name': "'Retreating, then advancing repeatedly over the centuries 3' by "
+         'Janie Kidston',
+ 'price': '540.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-3-by-janie-kidston',
+ 'width': '50'}
+2023-01-18 18:03:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-6-by-janie-kidston> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-6-by-janie-kidston>
+{'height': '60',
+ 'media': 'Archival Inkjet Print',
+ 'name': "'Retreating, then advancing repeatedly over the centuries 6' by "
+         'Janie Kidston',
+ 'price': '540.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/retreating-then-advancing-repeatedly-over-the-centuries-6-by-janie-kidston',
+ 'width': '50'}
+2023-01-18 18:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/walking-out-over-ice-in-midsummer-1> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:04 [scrapy.extensions.logstats] INFO: Crawled 197 pages (at 100 pages/min), scraped 145 items (at 78 items/min)
+2023-01-18 18:03:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/walking-out-over-ice-in-midsummer-1>
+{'height': '59',
+ 'media': 'Archival Digital Print',
+ 'name': 'Walking Out Over Ice in Midsummer 1 by Janie Kidston',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/walking-out-over-ice-in-midsummer-1',
+ 'width': '84'}
+2023-01-18 18:03:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/moving-from-the-side-of-the-vallery> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/moving-from-the-side-of-the-vallery>
+{'height': '60',
+ 'media': 'Archival digital print',
+ 'name': 'Moving from the side of the valley by Janie Kidston',
+ 'price': '540.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/moving-from-the-side-of-the-vallery',
+ 'width': '50'}
+2023-01-18 18:03:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/neon-pool> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:05 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/neon-pool
+2023-01-18 18:03:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/jubellied-joy-song-by-nadja-gabriela-plein> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/jubellied-joy-song-by-nadja-gabriela-plein>
+{'height': '41',
+ 'media': 'Paint onto Aluminium with subframe This is part of a small group of '
+          'small works of oil on aluminium. There is a sense of intimacy and '
+          'sensuality in them, a focused improvisation of close harmonies and '
+          'an intensely felt awareness of the present moment.',
+ 'name': 'Jubellied (joy song) by Nadja Gabriela Plein',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/jubellied-joy-song-by-nadja-gabriela-plein',
+ 'width': '50'}
+2023-01-18 18:03:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/sky-walk-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/sky-walk-by-jane-ward>
+{'height': '70',
+ 'media': 'Digital Print on Canvas with Dissolved ink',
+ 'name': 'Sky Walk by Jane ward',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/sky-walk-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:03:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/castle-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/castle-by-jane-ward>
+{'height': '70',
+ 'media': 'Digital print on Canvas with dissolved ink',
+ 'name': 'Castle by Jane Ward',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/castle-by-jane-ward',
+ 'width': '90'}
+2023-01-18 18:03:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/amongst-the-impcat-scars> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/amongst-the-impcat-scars>
+{'height': '90',
+ 'media': 'Digital print on canvas with hand dissoved ink Original Artwork',
+ 'name': 'Amongst the Impcat Scars by Jane Ward',
+ 'price': '1,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/amongst-the-impcat-scars',
+ 'width': '125'}
+2023-01-18 18:03:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/heated-discussion-by-lucinda-metcalfe> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:08 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/heated-discussion-by-lucinda-metcalfe
+2023-01-18 18:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/secret-place-by-natasha-kissell> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/secret-place-by-natasha-kissell>
+{'height': '60',
+ 'media': 'Oil paint onto Canvas Original Artwork',
+ 'name': 'Secret Place by Natasha Kissell',
+ 'price': '940.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/secret-place-by-natasha-kissell',
+ 'width': '70'}
+2023-01-18 18:03:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/garden-city-state-1a-by-jane-ward> (referer: https://www.bearspace.co.uk//purchase?page=10)
+2023-01-18 18:03:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/garden-city-state-1a-by-jane-ward>
+{'height': '45',
+ 'media': 'Digital print with hand dissolved ink and gold leaf Each edition is '
+          'hand finished based on the same print, therefore each edition is '
+          'bespoke .  Media such as gold leaf will change dependent on the '
+          'artists chosen application at that time.',
+ 'name': 'Garden City State 1a by Jane Ward',
+ 'price': '490.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/garden-city-state-1a-by-jane-ward',
+ 'width': '60'}
+2023-01-18 18:03:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/anxiety-machines> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:03:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/anxiety-machines>
+{'height': '99',
+ 'media': 'Oil, enamel and acrylic on canvas Own Art Scheme',
+ 'name': 'Anxiety Machines by Chris Hawtin',
+ 'price': '1,600.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/anxiety-machines',
+ 'width': '99'}
+2023-01-18 18:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/gregor-s-hollow-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:03:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/gregor-s-hollow-by-chris-hawtin>
+{'height': '198',
+ 'media': 'Oil, enamel, acrylic and resin on canvas Own Art Scheme',
+ 'name': "Gregor's Hollow by Chris Hawtin",
+ 'price': '4,000.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/gregor-s-hollow-by-chris-hawtin',
+ 'width': '198'}
+2023-01-18 18:03:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/jerome-s-peak-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:03:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.bearspace.co.uk/product-page/jerome-s-peak-by-chris-hawtin>
+{'height': '143',
+ 'media': 'Oil,enamel and acrylic on canvas Own Art Scheme',
+ 'name': "Jerome's Peak by Chris Hawtin",
+ 'price': '2,400.00',
+ 'url': 'https://www.bearspace.co.uk/product-page/jerome-s-peak-by-chris-hawtin',
+ 'width': '132'}
+2023-01-18 18:03:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.bearspace.co.uk/product-page/photeus-at-the-pythia-by-chris-hawtin> (referer: https://www.bearspace.co.uk//purchase?page=9)
+2023-01-18 18:03:12 [bearspace-parse] INFO: Out of Stock product Dropped!
+URL: https://www.bearspace.co.uk/product-page/photeus-at-the-pythia-by-chris-hawtin
+2023-01-18 18:03:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2023-01-18 18:03:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 99402,
+ 'downloader/request_count': 210,
+ 'downloader/request_method_count/GET': 210,
+ 'downloader/response_bytes': 37457858,
+ 'downloader/response_count': 210,
+ 'downloader/response_status_count/200': 210,
+ 'dupefilter/filtered': 29,
+ 'elapsed_time_seconds': 128.074799,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2023, 1, 18, 13, 3, 12, 458998),
+ 'httpcompression/response_bytes': 235657567,
+ 'httpcompression/response_count': 210,
+ 'item_scraped_count': 156,
+ 'log_count/DEBUG': 374,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 54,
+ 'memusage/max': 211816448,
+ 'memusage/startup': 93392896,
+ 'request_depth_max': 10,
+ 'response_received_count': 210,
+ 'scheduler/dequeued': 210,
+ 'scheduler/dequeued/memory': 210,
+ 'scheduler/enqueued': 210,
+ 'scheduler/enqueued/memory': 210,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2023, 1, 18, 13, 1, 4, 384199)}
+2023-01-18 18:03:12 [scrapy.core.engine] INFO: Spider closed (finished)
+                                                   url  ...     price
+0    https://www.bearspace.co.uk/product-page/p10-b...  ...    240.00
+1    https://www.bearspace.co.uk/product-page/p8-by...  ...    240.00
+2    https://www.bearspace.co.uk/product-page/p4-by...  ...    240.00
+3    https://www.bearspace.co.uk/product-page/p1-by...  ...    240.00
+4    https://www.bearspace.co.uk/product-page/c13-b...  ...    240.00
+..                                                 ...  ...       ...
+151  https://www.bearspace.co.uk/product-page/secre...  ...    940.00
+152  https://www.bearspace.co.uk/product-page/garde...  ...    490.00
+153  https://www.bearspace.co.uk/product-page/anxie...  ...  1,600.00
+154  https://www.bearspace.co.uk/product-page/grego...  ...  4,000.00
+155  https://www.bearspace.co.uk/product-page/jerom...  ...  2,400.00
+
+[156 rows x 6 columns]
